@@ -32,7 +32,7 @@ namespace EFCoreandDapper
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))
             );
 
-            services.AddScoped<ICompanyRepository, CompanyRepositoryEF>();
+            //services.AddScoped<ICompanyRepository, CompanyRepositoryEF>();
             services.AddScoped<ICompanyRepository, CompanyRepositoryDp>();
         }
 
