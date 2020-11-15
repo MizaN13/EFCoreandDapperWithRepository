@@ -9,8 +9,8 @@ FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src
 COPY ["EFCoreandDapper.csproj", "EFCoreandDapper/"]
 RUN dotnet restore "EFCoreandDapper/EFCoreandDapper.csproj"
-COPY . .
 WORKDIR "/src/EFCoreandDapper"
+COPY . .
 RUN dotnet build "EFCoreandDapper.csproj" -c Release -o /app/build
 
 FROM build AS publish
