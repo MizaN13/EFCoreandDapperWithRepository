@@ -7,7 +7,7 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src
-COPY ["EFCoreandDapper/EFCoreandDapper.csproj", "EFCoreandDapper/"]
+COPY ["EFCoreandDapper/EFCoreandDapper/EFCoreandDapper.csproj", "EFCoreandDapper/"]
 RUN dotnet restore "EFCoreandDapper/EFCoreandDapper.csproj"
 COPY . .
 WORKDIR "/src/EFCoreandDapper"
