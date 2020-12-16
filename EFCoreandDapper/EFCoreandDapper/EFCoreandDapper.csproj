@@ -4,6 +4,7 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UserSecretsId>66974fdf-191f-4dd0-802b-2217c7bad8fe</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <StartupObject>EFCoreandDapper.Program</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>

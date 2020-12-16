@@ -21,6 +21,7 @@ namespace EFCoreandDapper.Controllers
         }
 
         // GET: Company
+        // build test
         public async Task<IActionResult> Index()
         {
             //return View(await _context.Companies.ToListAsync());
